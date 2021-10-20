@@ -1,0 +1,40 @@
+<html>
+	<head>
+        <title>Cyber News Feed</title>
+    </head>
+    <style>
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    .label {
+      color: white;
+      padding: 8px;
+      font-family: Arial;
+    }
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+    </style>
+    <center><img src=''></center>
+    <pre></pre>
+    <br>
+    <body bgcolor='#000000' text='#39FF14' alink='#66FFFF' vlink='#66FCF1'>
+    <center><table border = '2' width ='80%' cellspacing ='7'> <font face= 'Times New Romans'><font Size='+2'></center>
+      <tr>
+        <th>The Hackers News</th>
+        <th>The Record</th>
+        <th>Bleeping Computer</th>
+      </tr>
+      <% html  = HTMLTemplate.new %>
+      <% m     = RSSFeed.new.magic %>
+      <%= html.table_row(m) %>
+    </table>
+</html>
